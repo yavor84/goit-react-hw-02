@@ -6,6 +6,7 @@ import Feedback from './components/Feedback/Feedback';
 import Notification from './components/Notification/Notification';
 
 const App = () => {
+  // Ініціалізація стану feedback
   const [feedback, setFeedback] = useState(() => {
     try {
       const savedFeedbackData = localStorage.getItem('feedbackData');
@@ -48,13 +49,14 @@ const App = () => {
     });
   };
 
+  //Створення лічильників
   const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
   const positiveFeedback =
     totalFeedback > 0 ? Math.round((feedback.good / totalFeedback) * 100) : 0;
 
   // Рендеринг
   return (
-    <div>
+    <div className="appContainer">
       <Description />
       <Options
         updateFeedback={updateFeedback}

@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.appContainer {
+  background: linear-gradient(135deg, #ebadb6 0%, #aceae1 100%);
+  border-radius: 7px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 20px;
+  min-height: 300px;
+}

@@ -1,0 +1,32 @@
+.options {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.optionsBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
+  border-radius: 30px;
+  border: 1px solid #8f9092;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.optionsBtn:hover {
+  box-shadow: inset 0 0 3px 3px #cecfd1;
+}
+
+.optionsBtn:active {
+  box-shadow: inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.optionsBtn:focus {
+  box-shadow: inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
